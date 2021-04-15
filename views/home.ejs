@@ -1,0 +1,21 @@
+<%- include("partials/header") %> 
+
+
+
+
+<% inputdata.forEach(data => { %>
+ <div class="box">
+        <h2><%= data.title %>   </h2>
+        <% let adres = "/" + data.title ; %>
+        <p><%= data.post.substring(0,100)+ "...." %><a href = "/post/<%= data._id %>" >[READ MORE]</a> </p>
+    </div>
+<% }); %>
+
+
+
+
+
+
+
+
+<%- include("partials/footer") %> 
